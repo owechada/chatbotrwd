@@ -1,7 +1,7 @@
 const { Configuration, OpenAIApi } = require("openai");
 
 const config = new Configuration({
-	apiKey: "YOUR_API_KEY",
+	apiKey: "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",
 });
 
 const openai = new OpenAIApi(config);
@@ -18,9 +18,9 @@ const runPrompt = async () => {
     `;
 
 	const response = await openai.createCompletion({
-		model: "text-davinci-003",
+		model: "gpt-3.5-turbo",
 		prompt: prompt,
-		max_tokens: 2048,
+	
 		temperature: 1,
 	});
 
