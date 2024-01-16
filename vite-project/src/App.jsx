@@ -10,7 +10,7 @@ import './App.css'
 
 async function get_message(){
 
-  const apiUrl = 'http://localhost:5421/message';
+  const apiUrl = 'https://rwncahtbotapi.onrender.com/message';
 
   const requestBody = [
     {
